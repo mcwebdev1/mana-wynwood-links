@@ -1,0 +1,191 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+}
+
+html {
+	overflow: hidden;
+}
+
+@font-face {
+	font-family: 'LINE Seed Sans';
+	src: url('./LINESeedSans.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 42px;
+	height: 100vh;
+	width: 100vw;
+	background: url("./BG_Photo.png") no-repeat fixed center center;
+	background-size: cover;
+	overflow: hidden;
+	padding: 16px;
+}
+
+
+.titillium-web-black {
+	font-size: 62px;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: white;
+	line-height: 50px;
+}
+
+.card {
+	position: relative;
+	max-width: 484px;
+	min-width: 250px;
+	background: rgba(95, 16, 229, 0.8);
+	margin: 24px auto 0 auto;
+	height: 100%;
+	font-size: clamp(20px, 2.4vh, 40px);
+	padding: 110px 40px 50px 20px;
+	border-radius: 24px;
+}
+
+ul li:last-child {
+	margin-bottom: 0;
+}
+
+ul li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.links {
+	margin-top: 25px;
+	font-family: 'LINE Seed Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.sticker_img {
+	position: absolute;
+	bottom: 0;
+	right: -120px;
+}
+
+.wynwood_avatar_img {
+	margin: -40px;
+}
+
+.social_medias {
+	display: flex;
+	align-items: center;
+	gap: 26px;
+	padding: 18px;
+	margin-top: 60px;
+}
+
+.social_media_icon {
+	height: 18px;
+}
+
+
+footer {
+	font-family: 'LINE Seed Sans', sans-serif;
+	font-size: 10px;
+	letter-spacing: 3px;
+	margin: 0 auto;
+}
+
+.footer_text {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 5px;
+}
+
+.mana_icon {
+	position: absolute;
+	width: 56px;
+	right: 40px;
+	bottom: 20px;
+}
+
+@media (max-width: 780px) {
+	.mana_icon {
+		display: none;
+	}
+}
+
+
+@media (max-width: 400px) {
+	.titillium-web-black {
+		font-size: 56px;
+	}
+
+	footer {
+		letter-spacing: 2px;
+	}
+}
+
+@media (max-width: 360px) {
+	.titillium-web-black {
+		font-size: 52px;
+	}
+
+	footer {
+		letter-spacing: 1px;
+		font-size: 8px;
+	}
+
+	.card {
+		font-size: 18px
+	}
+}
+
+@media (max-width: 350px) {
+	.titillium-web-black {
+		font-size: 46px;
+	}
+
+	.card {
+		font-size: 16px
+	}
+}
+
+@media (max-height: 860px) {
+	.social_medias {
+		margin-top: 40px;
+	}
+
+	.card {
+		padding-top: 95px
+	}
+
+	.mana_icon {
+		display: none;
+	}
+}
+
+@media (max-height: 820px) {
+	.social_medias {
+		margin-top: 20px;
+		padding: 0 0 0 18px;
+	}
+
+	.card {
+		padding-top: 80px
+	}
+}
+
+@media (max-height: 750px) {
+	.card {
+		padding-top: 60px
+	}
+}
+
+@media (max-height: 720px) {
+	.card {
+		padding-top: 30px
+	}
+}

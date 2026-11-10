@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="MW320 - Flexible Venue for Your Events by Mana Common"
+    />
+    <style>
+      @font-face {
+        font-family: 'Amsi Pro AKS';
+        src: url('AmsiProAKSCondensedW03UltraRegular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+
+      html {
+        overflow: hidden;
+      }
+
+      body {
+        background: url('Rectangle.png'), linear-gradient(to bottom, rgba(255, 27, 28, 1), rgba(255, 27, 28, 1));
+        background-blend-mode: multiply;
+        font-family: 'Amsi Pro AKS', sans-serif;
+        font-size: 32px;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .flex-container {
+        position: relative;
+        max-width: 522px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        white-space: pre-line;
+        height: 100%;
+        text-align: center;
+        line-height: 26px;
+        background-color:rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+
+      .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px 0;
+        background-color:rgba(0, 0, 0, 0.5);
+        max-width: 522px;
+        width: 100%;
+      }
+
+      .square-1, .square-2, .square-3, .square-4, .square-5, .square-6, .square-7 {
+        width: 174px;
+        height: 174px;
+        position: absolute;
+        background-color: red;
+        opacity: 80%;
+        z-index: -1;
+      }
+
+      .square-1 {
+        top: 0;
+        right: 0;
+      }
+
+      .square-2 {
+        top: 174px;
+        right: 0;
+      }
+
+      .square-3 {
+        top: 174px;
+      }
+
+      .square-4 {
+        top: 348px;
+        left: 0;
+      }
+
+      .square-5 {
+        top: 522px;
+        right: 0;
+      }
+
+      .square-6 {
+        top: 696px;
+        left: 174px;
+      }
+
+      .square-7 {
+        top: 870px;
+        right: 0;
+      }
+
+      @media (max-width: 1280px) {
+        .flex-container, .social-icons {
+          max-width: 430px;
+          min-width: 430px;
+        }
+
+        .square-1, .square-2, .square-3, .square-4, .square-5, .square-6, .square-7 {
+          width: 144px;
+          height: 144px;
+        }
+
+        .square-1 {
+          top: 0;
+          right: 0;
+        }
+
+        .square-2 {
+          top: 144px; /* 174px -> 144px */
+          right: 0;
+        }
+
+        .square-3 {
+          top: 144px; /* 174px -> 144px */
+        }
+
+        .square-4 {
+          top: 288px; /* 348px -> 288px */
+          left: 0;
+        }
+
+        .square-5 {
+          top: 432px; /* 522px -> 432px */
+          right: 0;
+        }
+
+        .square-6 {
+          top: 576px; /* 696px -> 576px */
+          left: 144px; /* 174px -> 144px */
+        }
+
+        .square-7 {
+          top: 720px; /* 870px -> 720px */
+          right: 0;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .social-icons {
+          padding: 20px 0
+        }
+      }
+
+      @media (max-width: 1280px) {
+        .social-icons {
+          padding: 20px 0
+        }
+      }
+
+      @media (max-width: 429px) {
+        .flex-container, .social-icons {
+          max-width: 342px;
+          min-width: 342px;
+        }
+
+        .square-1, .square-2, .square-3, .square-4, .square-5, .square-6, .square-7 {
+          width: 114px;
+          height: 114px;
+        }
+
+        .square-1 {
+          top: 0;
+          right: 0;
+        }
+
+        .square-2 {
+          top: 114px; /* 144px -> 114px */
+          right: 0;
+        }
+
+        .square-3 {
+          top: 114px; /* 144px -> 114px */
+        }
+
+        .square-4 {
+          top: 228px; /* 288px -> 228px */
+          left: 0;
+        }
+
+        .square-5 {
+          top: 342px; /* 432px -> 342px */
+          right: 0;
+        }
+
+        .square-6 {
+          top: 456px; /* 576px -> 456px */
+          left: 114px; /* 144px -> 114px */
+        }
+
+        .square-7 {
+          top: 570px; /* 720px -> 570px */
+          right: 0;
+        }
+      }
+    </style>
+    <title>MW320 - Flexible Venue for Your Events</title>
+  </head>
+  <body>
+<div class="flex-container">
+    <a href="https://manawynwood.com/wp-content/uploads/2024/02/Mana_Wynwood_320_Deck_COMPRESSED.pdf" target="_blank" rel="noopener noreferrer">LOOKBOOK</a>
+    <a href="https://manawynwood.com/events/" target="_blank" rel="noopener noreferrer">UPCOMING
+      EVENTS</a>
+    <a href="https://www.instagram.com/manawynwood320" target="_blank" rel="noopener noreferrer">
+        <img src="1920x1080-logo.svg" alt="MW320 Logo"/>
+    </a>
+    <a href="https://manawynwood.com/rent/?utm_source=linktr.ee&utm_medium=organic_social&utm_campaign=link_in_bio" target="_blank" rel="noopener noreferrer">VENUE
+      INQUIRIES</a>
+    <a href="https://manawynwood.com/event-spaces/#mana-wynwood-320" target="_blank" rel="noopener noreferrer">EVENT
+      SPACES</a>
+
+    <div class="square-1"></div>
+    <div class="square-2"></div>
+    <div class="square-3"></div>
+    <div class="square-4"></div>
+    <div class="square-5"></div>
+    <div class="square-6"></div>
+    <div class="square-7"></div>
+</div>
+
+<div class="social-icons">
+    <a href="https://www.facebook.com/manawynwood320/" target="_blank" rel="noopener noreferrer">
+        <img src="FacebookIcon.svg" alt="Mana Common Facebook link logo">
+    </a>
+    <a href="https://www.instagram.com/manawynwood320" target="_blank" rel="noopener noreferrer">
+        <img src="InstagramIcon.png" alt="Mana Common Instagram link logo">
+    </a>
+    <a href="https://www.youtube.com/channel/UCeXJhA4ZFlgUbP_TBrsyeGg" target="_blank" rel="noopener noreferrer">
+        <img src="YouTubeIcon.svg" alt="Mana Common YouTube link logo">
+    </a>
+    <a href="https://www.tiktok.com/@manawynwood" target="_blank" rel="noopener noreferrer">
+        <img src="TikTokIcon.svg" alt="Mana Common TikTok link logo">
+    </a>
+</div>
+  </body>
+</html>
